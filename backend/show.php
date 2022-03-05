@@ -8,14 +8,14 @@
 </head>
 <body>
   <script>
-  function clickMe(){
-    var result ="<?php php_func(); ?>"
+  function clickMe(var id_row){
+    var result ="<?php php_func(id_row); ?>"
     document.write(result);
   }
   </script>
   <?php
-  function php_func(){
-    echo "";
+  function php_func($var){
+    echo var_dump($var);
   }
   $servername="localhost";
   $username="root";
@@ -37,14 +37,19 @@
     <th>quantità</th>
     </tr></thead><tbody>";
     while($row = mysqli_fetch_assoc($result)) {
-      echo "<tr id=\"".$row['ID']."\" name=\"".$row['ID']."\">
+      echo "<tr>
       <td>" . $row['ID']."</td>
       <td>" . $row['descrizione']."</td>
       <td>" . $row['reparto']."</td>
       <td>" . $row['prezzo']."</td>
       <td>" . $row['quantita']."</td>
-      <td onclick=\"clickMe()\">modify</td>
-      <td>delete</td>
+      <td>modify</td>
+      <td>
+        <form method=\"POST\">
+
+        <input type=\"submit\" value=\"Delete\"/>
+        </form>
+      </td>
       </tr>";
     }
     echo "</tbody></table></div>";

@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <link rel="stylesheet" href=".\style.css">
 </head>
-
 <body>
-
 <div class="flex-container">
 <form action="/backend/insert.php" method="post" align="center">
 <div class="list-box">
