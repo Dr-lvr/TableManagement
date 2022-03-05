@@ -28,9 +28,8 @@ else {
   $reparto=$_POST['reparto'];
   $prezzo=$_POST['prezzo'];
   $quantita=$_POST['quantita'];
-  //$_SESSION['working_table']=$newtablename;
+  //$newtablename=$_SESSION['working_table'];
   $newtablename="frutteria";
-  $_SESSION['working_table']=$newtablename;
   $sql = "CALL CREATE_NEW(\"$newtablename\");";
   if ($conn->query($sql) === TRUE) {
     echo "New table created successfully<br>";

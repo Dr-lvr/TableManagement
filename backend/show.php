@@ -8,8 +8,8 @@
 </head>
 <body>
   <script>
-  function clickMe(var id_row){
-    var result ="<?php php_func(id_row); ?>"
+  function clickMe(){
+    var result ="<?php php_func(); ?>"
     document.write(result);
   }
   </script>
@@ -46,7 +46,6 @@
       <td>modify</td>
       <td>
         <form method=\"POST\">
-
         <input type=\"submit\" value=\"Delete\"/>
         </form>
       </td>
