@@ -8,9 +8,9 @@ if (!$conn){
   die("Connection failed: " . mysqli_connect_error());
 }
 $table=$_SESSION['working_table'];
-$sql = "DELETE FROM $table WHERE ID=".$_POST['delete_by_id'];
+$sql = "UPDATE $table SET `prezzo`=".$_POST['new_price']." WHERE `ID`=".$_POST['update_by_id'];
 if ($conn->query($sql) === TRUE) {
-  echo "Record deleted succcessfully ".$_POST['delete_by_id'];
+  echo "Record ".$_POST['update_by_id']." updated successfully to ".$_POST['new_price'];
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
