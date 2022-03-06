@@ -70,3 +70,10 @@ a{
   border: 1px solid sienna;
   display:flex;
 }
+#report{
+  grid-column: 13 / 23;
+  grid-row: 2 / 12;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
+}

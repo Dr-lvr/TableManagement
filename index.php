@@ -68,6 +68,11 @@
 			</form>
 		</div>
 
+		<div id="report">
+			<iframe width=100% height="100%" name="frame1" id="frame1" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads" src="./backend/report.php" >
+			</iframe>
+		</div>
+
 	</div>
 </body>
 </html>
