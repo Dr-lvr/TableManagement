@@ -10,8 +10,8 @@
 			<form action="/backend/insert.php" method="post" align="center">
 				<h2>Inserisci un Prodotto:</h2>
 				<input type="text" id="fname" name="descrizione" placeholder="descrizione" required><br>
-				<input type="text" id="lname" name="reparto" placeholder="reparto" required><br>
-				<select name="month">
+				reparto:
+				<select name="month" required>
 					<option value="-"></option>
 					<option value="casalinghi">casalinghi</option>
 					<option value="cartoleria">cartoleria</option>
