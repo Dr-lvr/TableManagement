@@ -11,6 +11,12 @@
 				<h2>Inserisci un Prodotto:</h2>
 				<input type="text" id="fname" name="descrizione" placeholder="descrizione" required><br>
 				<input type="text" id="lname" name="reparto" placeholder="reparto" required><br>
+				<select name="month">
+					<option value="-"></option>
+					<option value="casalinghi">casalinghi</option>
+					<option value="cartoleria">cartoleria</option>
+					<option value="ortofrutta">ortofrutta</option>
+				</select>
 				<input type="text" id="lname" name="prezzo" placeholder="prezzo" required><br>
 				<input type="text" id="lname" name="quantita" placeholder="quantita" required><br>
 				<input type="submit" value="Submit">
