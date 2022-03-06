@@ -41,17 +41,17 @@
 
 		<div id="range">
 			<form action="/backend/range.php" target="list" method="post" align="center">
-				<input type="text" id="min" name="min" placeholder="Insert min range" required>
-				<input type="text" id="max" name="max" placeholder="Insert max range" required>
-				<input type="submit" value="Update">
+				<input type="text" id="min" name="min" placeholder="Insert min prezzo" required>
+				<input type="text" id="max" name="max" placeholder="Insert max prezzo" required>
+				<input type="submit" value="Query">
 				<input type="reset">
 			</form>
 		</div>
 
 		<div id="max_quantity">
 			<form action="/backend/max_quantity.php" target="list" method="post" align="center">
-				<input type="text" id="max_quantity" name="max_quantity" placeholder="Insert max quantity" required>
-				<input type="submit" value="Update">
+				<input type="text" id="max_quantity" name="max_quantity" placeholder="Insert max quantitá" required>
+				<input type="submit" value="Query">
 				<input type="reset">
 			</form>
 		</div>

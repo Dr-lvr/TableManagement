@@ -20,7 +20,7 @@
   //example for introduce sessions
   $_SESSION['working_table']=$table;
   $table=$_SESSION['working_table'];
-  $Sql = "SELECT * FROM ".$table." WHERE `quantita` BETWEEN 0 AND ".$_POST['max_quantity'];
+  $Sql = "SELECT * FROM ".$table." WHERE `quantita` BETWEEN 0 AND ".$_POST['max_quantity']." ORDER BY `quantita`";
   $result = mysqli_query($conn, $Sql);
   if (mysqli_num_rows($result) > 0) {
     echo "<div class='table-responsive'><table id='myTable' class='table table-striped table-bordered'>

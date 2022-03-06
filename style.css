@@ -58,14 +58,14 @@ a{
 }
 #ward_value{
   grid-column: 2 / 4;
-  grid-row: 10 / 12;
+  grid-row: 11 / 12;
   background-color:rgba(211, 211, 211, 20%);
   border: 1px solid sienna;
   display:flex;
 }
 #simple_view{
   grid-column: 4 / 12;
-  grid-row: 10 / 12;
+  grid-row: 11 / 12;
   background-color:rgba(211, 211, 211, 20%);
   border: 1px solid sienna;
   display:flex;
