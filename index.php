@@ -28,12 +28,16 @@
 			</div>
 			<div class="list-box">
 				<input type="submit" value="Show"><br>
-				<form action="/backend/delete.php" method="post" align="center">
-					<input type="text" id="delete_by_id" name="delete_by_id" placeholder="Insert ID for deletion">
-					<input type="submit" value="Delete"><br>
-				</form>
 			</div>
 		</form><br>
+	</div>
+	<div class="flex-container">
+		<form action="/backend/delete.php" method="post" align="center">
+			<p>Insert ID for delete a row:
+				<input type="text" id="delete_by_id" name="delete_by_id" placeholder="Insert ID for deletion">
+				<input type="submit" value="Delete"><br>
+			</p>
+		</form>
 	</div>
 </body>
 </html>
