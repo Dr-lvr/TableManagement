@@ -17,7 +17,7 @@
 			</div><br>
 			<div class="list-box">
 				<input type="submit" value="Submit">
-				<input type="reset">
+				<input type="reset"><br>
 			</div>
 		</form><br>
 	</div>
@@ -28,6 +28,10 @@
 			</div>
 			<div class="list-box">
 				<input type="submit" value="Show"><br>
+				<form action="/backend/delete.php" method="post" align="center">
+					<input type="text" id="delete_by_id" name="delete_by_id" placeholder="Insert ID for deletion">
+					<input type="submit" value="Delete"><br>
+				</form>
 			</div>
 		</form><br>
 	</div>

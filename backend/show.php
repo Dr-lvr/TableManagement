@@ -7,16 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <script>
-  function clickMe(){
-    var result ="<?php php_func(); ?>"
-    document.write(result);
-  }
-  </script>
   <?php
-  function php_func($var){
-    echo var_dump($var);
-  }
   $servername="localhost";
   $username="root";
   $password="";
