@@ -43,15 +43,6 @@
       <td>" . $row['reparto']."</td>
       <td>" . $row['prezzo']."</td>
       <td>" . $row['quantita']."</td>
-<<<<<<< HEAD
-=======
-      <td>modify</td>
-      <td>
-        <form method=\"POST\">
-        <input type=\"submit\" value=\"Delete\"/>
-        </form>
-      </td>
->>>>>>> d911dd227f101852410f67d896c86868d5c74dc0
       </tr>";
     }
     echo "</tbody></table></div>";

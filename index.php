@@ -28,10 +28,6 @@
 			</div>
 			<div class="list-box">
 				<input type="submit" value="Show"><br>
-				<form action="/backend/delete.php" method="post" align="center">
-					<input type="text" id="delete_by_id" name="delete_by_id" placeholder="ID">
-					<input type="submit" value="Delete">
-				</form>
 			</div>
 		</form><br>
 	</div>
