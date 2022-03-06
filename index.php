@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href=".\style.css">
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div class="flex-container">
-		<form action="/backend/insert.php" method="post" align="center">
-			<div class="list-box">
-				<h2 id="ok">Inserisci Prodotti</h2>
-			</div>
-			<div class="">
+	<div class="platform">
+
+		<div id="main">
+			<form action="/backend/insert.php" method="post" align="center">
+				<h2>Inserisci un Prodotto:</h2>
 				<input type="text" id="fname" name="descrizione" placeholder="descrizione" required><br>
 				<input type="text" id="lname" name="reparto" placeholder="reparto" required><br>
 				<input type="text" id="lname" name="prezzo" placeholder="prezzo" required><br>
 				<input type="text" id="lname" name="quantita" placeholder="quantita" required><br>
-			</div><br>
-			<div class="list-box">
 				<input type="submit" value="Submit">
 				<input type="reset"><br>
-			</div>
-		</form><br>
-	</div>
-	<div class="flex-container">
-		<form action="/backend/show.php" method="post" align="center" target="list">
-			<div class="list-box">
-				<iframe class="list-box" src="/backend/show.php" name="list" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" min-width="500px"></iframe>
-			</div>
-		</form><br>
-	</div>
-	<div class="flex-container">
-		<div class="list-box">
-			<?php //insert confirmation on submit beacuse deletion is otherwise instant ?>
-		<form action="/backend/delete.php" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
-			<p>Insert ID for delete a row:
-				<input type="text" id="delete_by_id" name="delete_by_id" placeholder="Insert ID for deletion">
-				<input type="submit" value="Delete"><br>
-			</p>
-		</form>
+			</form>
 		</div>
-	</div>
-	<div class="flex-container">
-		<div class="list-box">
+
+		<div id="view">
+			<iframe width="100%" height="100%" src="/backend/show.php" name="list" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" min-width="500px"></iframe>
+		</div>
+
+		<?php //insert confirmation on submit beacuse deletion is otherwise instant ?>
+		<div id="delete">
+			<form action="/backend/delete.php" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+				<input type="text" id="delete_by_id" name="delete_by_id" placeholder="Insert ID for deletion" required>
+				<input type="submit" value="Delete">
+			</form>
+		</div>
+
+		<div id="update">
 			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
-		<form action="/backend/update.php" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
-			<p>Update a row by ID:
-				<input type="text" id="update_by_id" name="update_by_id" placeholder="Insert ID for update">
-				<input type="text" id="new_price" name="new_price" placeholder="Insert new price for update">
-				<input type="submit" value="Update"><br>
-			</p>
-		</form>
+			<form action="/backend/update.php" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+				<input type="text" id="update_by_id" name="update_by_id" placeholder="Insert ID for update" required>
+				<input type="text" id="new_price" name="new_price" placeholder="Insert new price" required>
+				<input type="submit" value="Update">
+			</form>
 		</div>
+
+		<div id="range">
+			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
+			<form action="/backend/range.php" target="list" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+				<input type="text" id="min" name="min" placeholder="Insert min range" required>
+				<input type="text" id="max" name="max" placeholder="Insert max range" required>
+				<input type="submit" value="Update">
+				<input type="reset">
+			</form>
+		</div>
+
+		<div id="max_quantity">
+			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
+			<form action="/backend/max_quantity.php" target="list" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+				<input type="text" id="max_quantity" name="max_quantity" placeholder="Insert max quantity" required>
+				<input type="submit" value="Update">
+				<input type="reset">
+			</form>
+		</div>
+
+		<div id="ward_value">
+			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
+			<form action="/backend/ward_value.php" target="list" method="post" align="center">
+				<input type="submit" value="Visualizza valore per reparto">
+			</form>
+		</div>
+
 	</div>
 </body>
 </html>

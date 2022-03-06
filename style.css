@@ -1,33 +1,65 @@
-* {
-  box-sizing: flex-container;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
 }
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
-  text-align: center;
+a{
+  text-decoration: none;
 }
-
-.flex-item-left {
-  background-color: #f1f1f1;
-  padding: 25px;
-  flex: 50%;
+.platform {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+  width: 100vw;
+  height:100vh;
 }
-
-.flex-item-right {
-  background-color: dodgerblue;
-  padding: 10px;
-  flex: 50%;
+#main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 7;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
 }
-.list-box {
-  background-color: dodgerblue;
-  width: 800px;
+#view {
+  grid-column: 2 / 12;
+  grid-row: 12 / 23;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
 }
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
-  }
+#delete {
+  grid-column: 3 / 12;
+  grid-row: 2 / 4;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
+}
+#update {
+  grid-column: 3 / 12;
+  grid-row: 4 / 6;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
+}
+#range{
+  grid-column: 2 / 12;
+  grid-row: 8 / 9;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
+}
+#max_quantity{
+  grid-column: 2 / 12;
+  grid-row: 9 / 10;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
+}
+#ward_value{
+  grid-column: 2 / 12;
+  grid-row: 10 / 12;
+  background-color:rgba(211, 211, 211, 20%);
+  border: 1px solid sienna;
+  display:flex;
 }
