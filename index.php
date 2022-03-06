@@ -40,8 +40,7 @@
 		</div>
 
 		<div id="range">
-			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
-			<form action="/backend/range.php" target="list" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+			<form action="/backend/range.php" target="list" method="post" align="center">
 				<input type="text" id="min" name="min" placeholder="Insert min range" required>
 				<input type="text" id="max" name="max" placeholder="Insert max range" required>
 				<input type="submit" value="Update">
@@ -50,8 +49,7 @@
 		</div>
 
 		<div id="max_quantity">
-			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
-			<form action="/backend/max_quantity.php" target="list" method="post" align="center" onsubmit="return confirm('Click OK to confirm or you can ignore by clicking Cancel.');">
+			<form action="/backend/max_quantity.php" target="list" method="post" align="center">
 				<input type="text" id="max_quantity" name="max_quantity" placeholder="Insert max quantity" required>
 				<input type="submit" value="Update">
 				<input type="reset">
@@ -59,9 +57,14 @@
 		</div>
 
 		<div id="ward_value">
-			<?php //insert confirmation on submit beacuse update is otherwise instant ?>
 			<form action="/backend/ward_value.php" target="list" method="post" align="center">
 				<input type="submit" value="Visualizza valore per reparto">
+			</form>
+		</div>
+
+		<div id="simple_view">
+			<form action="/backend/show.php" target="list" method="post" align="center">
+				<input type="submit" value="Torna ai dati">
 			</form>
 		</div>
 

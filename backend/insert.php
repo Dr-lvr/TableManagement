@@ -4,20 +4,6 @@ $servername="localhost";
 $username="root";
 $password="";
 $db="prodotti";
-$conn = mysqli_connect($servername, $username, $password);
-if (!$conn){
-  die("Connection failed: " . mysqli_connect_error());
-}
-else{
-  $sql = "CREATE DATABASE IF NOT EXISTS ".$db;
-  if ($conn->query($sql) === TRUE) {
-    echo "New db created successfully<br>";
-    //here u can associate db and procedures
-  }
-  else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-}
 $conn = mysqli_connect($servername, $username, $password, $db);
 if (!$conn){
   die("Connection failed: " . mysqli_connect_error()). "<br>";
