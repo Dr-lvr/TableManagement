@@ -29,6 +29,7 @@ else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
   $conn->close();
+  //if u wanna see errors in insertion, tap redirection
   header("location: ../index.php");
 }
 ?>
