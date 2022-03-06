@@ -11,7 +11,7 @@
 				<h2>Inserisci un Prodotto:</h2>
 				<input type="text" id="fname" name="descrizione" placeholder="descrizione" required><br>
 				reparto:
-				<select name="month" required>
+				<select name="reparto" required>
 					<option value="-"></option>
 					<option value="casalinghi">casalinghi</option>
 					<option value="cartoleria">cartoleria</option>
